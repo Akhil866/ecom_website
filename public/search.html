@@ -3,66 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/product.css">
-
-
-    <title>Product Page</title>
+   <link rel="stylesheet" href="css/search.css">
+    <title>Search-Page</title>
 </head>
 <body>
-    
+     <nav class="navbar"></nav>
+     
 
-<nav class="navbar"></nav>
+<section class="search-results">
 
-
-<section class="product-details">
-    <div class="image-slider">
-        <div class="product-images">
-            <img src="img/product image 1.png" class="active" alt="">
-            <img src="img/product image 2.png" alt="">
-            <img src="img/product image 3.png" alt="">
-            <img src="img/product image 4.png" alt="">
-        </div>
-    </div>
-     <div class="details">
-        <h2 class="product-brand">calvin klein</h2>
-        <p class="product-short-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        <span class="product-price">$99</span>
-        <span class="product-actual-price">$200</span>
-        <span class="product-discount">( 50% off )</span>
-
-        <p class="product-sub-heading">select size</p>
-
-        <input type="radio" name="size" value="s" checked hidden id="s-size">
-        <label for="s-size" class="size-radio-btn check">s</label>
-        <input type="radio" name="size" value="m" hidden id="m-size">
-        <label for="m-size" class="size-radio-btn">m</label>
-        <input type="radio" name="size" value="l" hidden id="l-size">
-        <label for="l-size" class="size-radio-btn">l</label>
-        <input type="radio" name="size" value="xl" hidden id="xl-size">
-        <label for="xl-size" class="size-radio-btn">xl</label>
-        <input type="radio" name="size" value="xxl" hidden id="xxl-size">
-        <label for="xxl-size" class="size-radio-btn">xxl</label>
-
-        <button class="btn cart-btn">add to cart</button>
-        <button class="btn">add to wishlist</button>
-    </div>
-</section>
-
-
-<section class="detail-des">
-    <h2 class="heading">description</h2>
-    <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ......</p>
-</section>
-
-
-<section class="product">
-    <h2 class="product-category">Shirts</h2>
-    <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
-    <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
-    <div class="product-container">
+    <h2 class="heading">search results for <span>product</span></h2>
+ <div class="product-container">
         <div class="product-card">
             <div class="product-image">
                 <span class="discount-tag">50% off</span>
@@ -130,7 +82,8 @@
             <p class="product-short-des">a short line about the cloth..</p>
             <span class="price">$20</span><span class="actual-price">$40</span>
         </div>
-    </div> <div class="product-card">
+    </div> 
+    <div class="product-card">
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/card7.png" class="product-thumb" alt="">
@@ -142,17 +95,7 @@
             <span class="price">$20</span><span class="actual-price">$40</span>
         </div>
     </div>
-    +7 more cards
- </div>
-</section>
-
-
-<section class="product">
-    <h2 class="product-category">Shoes</h2>
-    <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
-    <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
-    <div class="product-container">
-        <div class="product-card">
+    <div class="product-card">
             <div class="product-image">
                 <span class="discount-tag">50% off</span>
             <img src="img/card9.png" class="product-thumb" alt="">
@@ -219,7 +162,8 @@
             <p class="product-short-des">a short line about the cloth..</p>
             <span class="price">$20</span><span class="actual-price">$40</span>
         </div>
-    </div> <div class="product-card">
+    </div> 
+    <div class="product-card">
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/card12.png" class="product-thumb" alt="">
@@ -231,16 +175,14 @@
             <span class="price">$20</span><span class="actual-price">$40</span>
         </div>
     </div>
-    +7 more cards
+   
  </div>
 </section>
 
-<footer></footer>
 
-<script src="js/nav.js"></script>
-<script src="js/footer.js"></script>
-<script src="js/home.js"></script>
-<script src="js/product.js"></script>
+    <footer></footer>
 
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
 </body>
 </html>

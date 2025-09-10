@@ -24,4 +24,4 @@ sizeBtns.forEach((item, i) => { // looping through each button
         item.classList.add('check'); // adding check class to clicked button
         checkedBtn = i; // upading the variable
     })
-})
+})  
