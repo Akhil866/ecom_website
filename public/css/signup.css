@@ -73,7 +73,7 @@ textarea{
 /* checkbox styles */
 
 .checkbox{
-    -webkit-appearance: none;
+    appearance: none;
     position: relative;
     width: 15px;
     height: 15px;
