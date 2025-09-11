@@ -1,0 +1,25 @@
+{
+  "name": "ecomwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+        "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akhil866/ecom_website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akhil866/ecom_website/issues"
+  },
+  "homepage": "https://github.com/Akhil866/ecom_website#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express.js": "^1.0.0",
+    "firebase-admin": "^13.5.0",
+    "nodemon": "^3.1.10"
+  }
+}
