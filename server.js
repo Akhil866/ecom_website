@@ -1,7 +1,16 @@
 const express = require('express');
+const admin = require('firebase-admin');
+const bcrypt = require('bcrypt');
 const path = require('path');
 
-const app = express();
+//firebase admin setup
+let serviceAccount = require("./clothing-ecommerce-website-firebase-adminsdk-fbsvc-8637c379cc.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount)
+});
+
+
 let staticPath = path.join(__dirname, "public");
 
 // middlewares
