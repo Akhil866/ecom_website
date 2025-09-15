@@ -51,7 +51,7 @@ ecommerce-website/
 
 ### 1️⃣ Clone the repository  
 ```bash
-git clone https://github.com/your-username/ecommerce-website.git
+git clone https://github.com/Akhil866/ecommerce-website.git
 cd ecommerce-website
 ```
 
@@ -88,11 +88,6 @@ Server will start at:
 
 ---
 
-## 📸 Screenshots (Optional)  
-
-_Add screenshots or a demo GIF of your project here._  
-
----
 
 ## 🤝 Contributing  
 
