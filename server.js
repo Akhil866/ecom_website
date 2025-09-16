@@ -1,47 +1,43 @@
 const express = require('express');
-const admin = require('firebase-admin');
-const bcrypt = require('bcrypt');
 const path = require('path');
 
-//firebase admin setup
-let serviceAccount = require("./clothing-ecommerce-website-firebase-adminsdk-fbsvc-8637c379cc.json");
+// create express app
+const app = express();
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
-});
-
-
+// static path
 let staticPath = path.join(__dirname, "public");
 
 // middlewares
-app.use(express.json()); // ✅ required to parse JSON data
-app.use(express.static(staticPath));
+app.use(express.json());             // handle JSON request bodies
+app.use(express.static(staticPath)); // serve static files
 
 // home route
 app.get("/", (req, res) => {
-    res.sendFile(path.join(staticPath, "index.html"));
+  res.sendFile(path.join(staticPath, "index.html"));
 });
 
-// signup route (GET)
-app.get('/signup', (req, res) => {
-    res.sendFile(path.join(staticPath, "signup.html"));
+// signup page
+app.get("/signup", (req, res) => {
+  res.sendFile(path.join(staticPath, "signup.html"));
 });
-
-// signup route (POST)
+// signup page
 app.post('/signup', (req, res) => {
-   console.log("data received ✅");
-    console.log(req.body);   // also log the actual form data if you want
+  console.log(req.body);
+  res.json('data recieved');
+})
 
-    res.json({ message: "data received" }); 
-});
 
-// 404 route
+// 404 page
 app.get('/404', (req, res) => {
-    res.sendFile(path.join(staticPath, "404.html"));
+  res.sendFile(path.join(staticPath, "404.html"));
 });
 
+// fallback (any route not found)
 app.use((req, res) => {
-    res.redirect('/404');
+  res.redirect('/404');
 });
 
-app.listen(3000, () => console.log("listening on port 3000..."));
+// start server
+app.listen(3000, () => {
+  console.log('🚀 Server running at http://localhost:3000');
+});
